@@ -68,7 +68,7 @@
           Эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <button class="button">Заказать услугу</button>
+        <button data-modal-open class="button">Заказать услугу</button>
       </section>
 
       <!-- Переваги -->
@@ -577,9 +577,9 @@
     </footer>
 
     <!-- Модальне вікно -->
-    <div class="backdrop is-hidden">
+    <div data-modal class="backdrop is-hidden">
       <form action="#" class="modal-form">
-        <button class="modal-close-button" type="button">
+        <button data-modal-close class="modal-close-button" type="button">
           <svg class="icon-modal-close-button">
             <use href="./images/sprite.svg#icon-close-btn"></use>
           </svg>
@@ -656,5 +656,6 @@
         <button class="button" type="submit">Отправить</button>
       </form>
     </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
