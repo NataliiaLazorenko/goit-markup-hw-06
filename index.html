@@ -549,19 +549,112 @@
           </ul>
         </div>
 
-        <form class="footer-form">
+        <div>
           <b class="title">Подпишитесь на рассылку</b>
-          <div class="footer-form-field">
-            <input type="email" name="mail" id="mail" placeholder="E-mail" />
-            <button type="submit" class="button">
-              Подписаться
-              <svg class="icon-sign animate__zoomIn" width="24px" height="24px">
-                <use href="./images/sprite.svg#icon-sign"></use>
-              </svg>
-            </button>
-          </div>
-        </form>
+          <form action="#" class="footer-form">
+            <div class="footer-form-field">
+              <input
+                class="form-mail"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="E-mail"
+              />
+              <button type="submit" class="button">
+                Подписаться
+                <svg
+                  class="icon-sign animate__zoomIn"
+                  width="24px"
+                  height="24px"
+                >
+                  <use href="./images/sprite.svg#icon-sign"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
     </footer>
+
+    <!-- Модальне вікно -->
+    <div class="backdrop is-hidden">
+      <form action="#" class="modal-form">
+        <button class="modal-close-button" type="button">
+          <svg class="icon-modal-close-button">
+            <use href="./images/sprite.svg#icon-close-btn"></use>
+          </svg>
+        </button>
+        <b class="modal-invite">Оставьте свои данные, мы вам перезвоним</b>
+        <div class="modal-form-input-field">
+          <input
+            class="modal-form-input"
+            type="text"
+            name="user-name"
+            id="modal-user-name"
+            placeholder=" "
+            minlength="2"
+            required
+          />
+          <label class="modal-form-label" for="modal-user-name">Имя</label>
+          <svg class="icon-modal-form-input">
+            <use href="./images/sprite.svg#icon-person"></use>
+          </svg>
+        </div>
+        <div class="modal-form-input-field">
+          <input
+            class="modal-form-input"
+            type="tel"
+            name="user-tel"
+            id="modal-user-tel"
+            placeholder=" "
+            required
+          />
+          <label class="modal-form-label" for="modal-user-tel">Телефон</label>
+          <svg class="icon-modal-form-input">
+            <use href="./images/sprite.svg#icon-phone"></use>
+          </svg>
+        </div>
+        <div class="modal-form-input-field">
+          <input
+            class="modal-form-input"
+            type="email"
+            name="user-mail"
+            id="modal-user-mail"
+            placeholder=" "
+            required
+          />
+          <label class="modal-form-label" for="modal-user-mail">Почта</label>
+          <svg class="icon-modal-form-input">
+            <use href="./images/sprite.svg#icon-mail"></use>
+          </svg>
+        </div>
+        <div class="modal-form-comment-field">
+          <textarea
+            class="modal-form-comment"
+            name="user-comment"
+            id="modal-user-comment"
+            placeholder=" "
+          ></textarea>
+          <label class="modal-form-label" for="modal-user-comment"
+            >Комментарий</label
+          >
+        </div>
+        <label class="modal-form-option-label">
+          <input
+            class="modal-form-checkbox visually-hidden"
+            type="checkbox"
+            name="policy"
+            value="accept-policy"
+            required
+          />
+          <span class="modal-form-custom-checkbox"></span>
+          <span
+            >Соглашаюсь с рассылкой и принимаю
+            <a class="link-contract" href="">Условия договора</a></span
+          >
+        </label>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+    </div>
   </body>
 </html>
